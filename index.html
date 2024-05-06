@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permintaan Stok Barang Toko Barokah 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-4">Permintaan Stok Barang Toko Barokah</h2>
+
+        <!-- Informasi Tambahan -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p id="creationDate">Tanggal Pembuatan: <strong></strong></p>
+            </div>
+        </div>
+
+        <!-- Cari Barang Form -->
+        <div class="form-group mt-4">
+            <label for="searchInput">Cari Barang</label>
+            <input type="text" class="form-control" id="searchInput" placeholder="Masukkan nama barang...">
+        </div>
+
+        <!-- Hasil Pencarian -->
+        <div id="resultContainer" class="mt-3"></div>
+
+        <!-- Tabel Barang -->
+        <table id="entryTable" class="table table-striped mt-4">
+            <thead>
+                <tr>
+                    <th scope="col">Nama Barang</th>
+                    <th scope="col">Kode Barang</th>
+                    <th scope="col">Stok Barang Sekarang</th>
+                    <th scope="col">Satuan</th>
+                    <th scope="col">Permintaan Stok</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data barang akan ditambahkan secara dinamis -->
+            </tbody>
+        </table>
+
+        <!-- Simpan Button -->
+        <button class="btn btn-success btn-save">Share</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
